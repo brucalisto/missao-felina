@@ -45,3 +45,22 @@
 @media(max-width:900px){.guarantee>.shell{grid-template-columns:1fr}.vet-visual{width:min(480px,100%);margin:auto}.finder-mockup figure img{max-height:480px}}
 @media(max-width:620px){.finder-mockup figure{min-height:390px;padding:12px}.works-anywhere span{width:100%}.gold-seal{width:88px;height:88px}.offer.featured{animation-duration:2.7s}}
 @media(prefers-reduced-motion:reduce){.offer.featured{animation:none!important}}
+
+/* Tom felino, GIFs e seção de movimento */
+.hero-meme{position:relative;margin:0;min-height:500px;border-radius:42% 58% 44% 56%/52% 42% 58% 48%;overflow:hidden;background:var(--yellow);box-shadow:0 28px 70px #67430f2e;border:8px solid #fff}
+.hero-meme img{width:100%;height:500px;display:block;object-fit:cover}
+.hero-meme:after{content:"";position:absolute;inset:60% 0 0;background:linear-gradient(transparent,#142e2bcc)}
+.hero-meme .speech{position:absolute;z-index:3;top:24px;left:22px;right:22px;padding:14px 18px;border-radius:18px 18px 18px 4px;background:#fff;color:var(--ink);font:700 15px/1.3 Georgia;box-shadow:0 12px 28px #20323a25}
+.hero-meme figcaption{position:absolute;z-index:3;bottom:24px;left:25px;display:flex;align-items:center;gap:8px;color:#fff;font-size:12px;font-weight:900}.hero-meme figcaption svg{width:19px;color:var(--yellow)}
+.cat-health{background:#fffdf8}.health-intro{display:grid;grid-template-columns:minmax(300px,.85fr) 1.15fr;gap:65px;align-items:center}.health-intro figure{margin:0;position:relative;border-radius:30px;overflow:hidden;background:var(--yellow);box-shadow:0 24px 55px #20323a24;transform:rotate(-1.5deg)}.health-intro figure img{display:block;width:100%;height:390px;object-fit:cover}.health-intro figcaption{position:absolute;left:18px;right:18px;bottom:18px;padding:12px;border-radius:13px;background:#fff;color:var(--coral);font-size:13px;font-weight:1000;text-align:center;box-shadow:0 8px 25px #0003}.health-intro h2{margin-top:14px}.health-intro p{color:var(--muted)}
+.cat-compare{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:55px}.cat-compare article{padding:30px;border-radius:24px;border:2px solid}.cat-compare .without{background:#fff0ec;border-color:#ff9e8f}.cat-compare .with{background:#e5f8f1;border-color:#62c5aa}.cat-compare article>span{font-size:12px;font-weight:1000;text-transform:uppercase;letter-spacing:.06em}.cat-compare h3{font:27px/1.15 Georgia;margin:11px 0 17px}.cat-compare ul{margin:0;padding-left:20px}.cat-compare li{margin:9px 0;color:#4f625d}.health-note{display:flex;align-items:center;justify-content:center;gap:8px;margin:25px auto 0;color:var(--muted);font-size:11px;font-weight:800;text-align:center}.health-note svg{width:19px;color:var(--green);flex:none}
+@media(max-width:900px){.health-intro{grid-template-columns:1fr}.health-intro figure{width:min(560px,100%);margin:auto}.hero-meme{min-height:440px}.hero-meme img{height:440px}}
+@media(max-width:620px){.hero-meme{min-height:350px;border-width:5px;border-radius:30px}.hero-meme img{height:350px}.hero-meme .speech{font-size:13px}.cat-compare{grid-template-columns:1fr}.health-intro{gap:35px}.health-intro figure img{height:310px}.health-note{align-items:flex-start}}
+
+/* Ajustes de leitura e enquadramento solicitados */
+.instincts>div{min-height:0;padding:0 0 13px;display:grid;grid-template-rows:150px auto;background:#fff;color:var(--ink);overflow:hidden;border:0}
+.instincts>div:after{display:none}.instincts img{position:static;width:100%;height:150px;object-fit:cover}.instincts i{display:none}.instincts span{top:8px;right:9px;z-index:3;padding:2px 6px;border-radius:99px;background:#163a35aa;color:#fff;font-size:10px}.instincts b{position:static;z-index:auto;margin:11px 5px 0;color:var(--ink);font-size:12px;line-height:1.2}
+.offer-photo{display:block;width:calc(100% + 66px);height:155px;margin:-33px -33px 25px;object-fit:cover;object-position:center;border:0}.offer.featured .offer-photo{width:calc(100% + 66px);height:190px;margin:-38px -33px 25px;object-fit:cover;object-position:center}
+.vet-visual img{aspect-ratio:4/3;object-fit:contain;background:#e7f2ef}.gold-seal{right:15px;bottom:15px;z-index:3}
+@media(max-width:900px){.instincts>div{grid-template-rows:180px auto}.instincts img{height:180px}}
+@media(max-width:620px){.instincts>div{grid-template-rows:165px auto}.instincts img{height:165px}.offer-photo,.offer.featured .offer-photo{height:175px}}
