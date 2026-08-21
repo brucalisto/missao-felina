@@ -64,3 +64,15 @@
 .vet-visual img{aspect-ratio:4/3;object-fit:contain;background:#e7f2ef}.gold-seal{right:15px;bottom:15px;z-index:3}
 @media(max-width:900px){.instincts>div{grid-template-rows:180px auto}.instincts img{height:180px}}
 @media(max-width:620px){.instincts>div{grid-template-rows:165px auto}.instincts img{height:165px}.offer-photo,.offer.featured .offer-photo{height:175px}}
+
+/* Hero sem sobreposição e com GIF integral */
+.hero-meme{min-height:0;border-radius:28px;display:block;background:#111;overflow:hidden}
+.hero-meme:after,.hero-meme .speech,.hero-meme figcaption{display:none}
+.hero-meme img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+@media(max-width:900px){.hero-meme{min-height:0}.hero-meme img{height:auto}}
+@media(max-width:620px){.hero-meme{min-height:0}.hero-meme img{height:auto}}
+
+/* Mockups de produto preenchendo integralmente o cabeçalho das ofertas */
+.offer-photo{width:calc(100% + 66px);height:185px;margin:-33px -33px 25px;object-fit:cover;object-position:center;background:var(--coral)}
+.offer.featured .offer-photo{width:calc(100% + 66px);height:215px;margin:-38px -33px 25px;object-fit:cover;object-position:center;background:var(--green)}
+@media(max-width:620px){.offer-photo,.offer.featured .offer-photo{height:auto;aspect-ratio:16/9;object-fit:cover}}
